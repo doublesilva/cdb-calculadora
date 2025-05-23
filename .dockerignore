@@ -1,0 +1,30 @@
+# Node e Angular
+node_modules
+dist
+.angular
+npm-debug.log
+.vite
+
+# .NET
+bin/
+obj/
+*.user
+*.suo
+
+# Git
+.git
+.gitignore
+
+# Build e coverage
+TestResults/
+coverage/
+*.coverage
+
+# Outros
+.vscode/
+*.db
+.env
+.env.*
+Dockerfile*
+docker-compose*
+README.md

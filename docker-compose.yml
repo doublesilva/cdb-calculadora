@@ -1,0 +1,24 @@
+services:
+  api:
+    build:
+      context: .                                
+      dockerfile: backend/Cdb.Calculadora.Api/Dockerfile
+    ports:
+      - "5000:8080"
+    networks:
+      - cdb-network
+
+  frontend:
+    build:
+      context: frontend/cdb-calculadora-app
+      dockerfile: Dockerfile
+    ports:
+      - "4200:80"
+    depends_on:
+      - api
+    networks:
+      - cdb-network
+
+networks:
+  cdb-network:
+    driver: bridge

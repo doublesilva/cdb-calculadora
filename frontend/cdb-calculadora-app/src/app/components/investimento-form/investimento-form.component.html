@@ -1,0 +1,25 @@
+<h2>Simular Investimento em CDB</h2>
+
+<form (ngSubmit)="calcular()" #form="ngForm">
+  <div>
+    <label>Valor Inicial:</label>
+    <input type="number" [(ngModel)]="model.valorInicial" name="valorInicial" required min="1" />
+  </div>
+
+  <div>
+    <label>Prazo em Meses:</label>
+    <input type="number" [(ngModel)]="model.prazoMeses" name="prazoMeses" required min="2" />
+  </div>
+
+  <button type="submit" [disabled]="form.invalid">Calcular</button>
+</form>
+
+<div *ngIf="resultado">
+  <h3>Resultado:</h3>
+  <p><strong>Valor Bruto:</strong> {{ resultado.valorBruto | currency:'BRL' }}</p>
+  <p><strong>Valor Líquido:</strong> {{ resultado.valorLiquido | currency:'BRL' }}</p>
+</div>
+
+<div *ngIf="error" style="color:red;">
+  <p>{{ error }}</p>
+</div>

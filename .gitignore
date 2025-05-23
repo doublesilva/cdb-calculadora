@@ -1,0 +1,36 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.log
+
+# Visual Studio Code
+.vscode/
+
+# JetBrains Rider
+.idea/
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Testes e cobertura
+TestResults/
+coverage/
+*.coverage
+*.trx
+
+# Angular
+node_modules/
+dist/
+.angular/
+.vite/
+npm-debug.log
+package-lock.json
+
+# Docker e CI
+.env
+.env.*
+docker-compose.override.yml

@@ -1,0 +1,37 @@
+Summary
+  Generated on: 22/05/2025 - 22:40:41
+  Coverage date: 22/05/2025 - 22:20:20 - 22/05/2025 - 22:40:28
+  Parser: MultiReport (2x Cobertura)
+  Assemblies: 3
+  Classes: 11
+  Files: 11
+  Line coverage: 91.7%
+  Covered lines: 122
+  Uncovered lines: 11
+  Coverable lines: 133
+  Total lines: 317
+  Branch coverage: 83.3% (15 of 18)
+  Covered branches: 15
+  Total branches: 18
+  Method coverage: 90.9% (20 of 22)
+  Full method coverage: 81.8% (18 of 22)
+  Covered methods: 20
+  Fully covered methods: 18
+  Total methods: 22
+
+Cdb.Calculadora.Api                                                             94.2%
+  Cdb.Calculadora.Api.Controllers.InvestimentoController                         100%
+  Cdb.Calculadora.Api.Middlewares.ExceptionHandlingMiddleware                    100%
+  Program                                                                       86.6%
+
+Cdb.Calculadora.Application                                                     87.1%
+  Cdb.Calculadora.Application.Behaviors.ValidationBehavior<T1, T2>              86.6%
+  Cdb.Calculadora.Application.Commands.CalcularInvestimentoCommand               100%
+  Cdb.Calculadora.Application.DTOs.CalcularInvestimentoDto                       100%
+  Cdb.Calculadora.Application.DTOs.ResultadoInvestimentoDto                     57.1%
+  Cdb.Calculadora.Application.Handlers.CalcularInvestimentoHandler               100%
+  Cdb.Calculadora.Application.Validators.CalcularInvestimentoCommandValidator    100%
+
+Cdb.Calculadora.Domain                                                            92%
+  Cdb.Calculadora.Domain.Models.ResultadoInvestimento                            100%
+  Cdb.Calculadora.Domain.Services.CalculoCdbService                             88.8%
