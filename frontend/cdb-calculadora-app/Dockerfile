@@ -7,5 +7,5 @@ RUN npm run build --prod
 
 # Serve stage
 FROM nginx:alpine
-COPY --from=build /app/dist/cdb-calculadora-app /usr/share/nginx/html
+COPY --from=build /app/dist/cdb-calculadora-app/browser /usr/share/nginx/html
 EXPOSE 80

@@ -16,7 +16,7 @@ export interface ResultadoInvestimentoDto {
   providedIn: 'root',
 })
 export class InvestimentoService {
-  private readonly apiUrl = '/api/investimento/calcular';
+  private readonly apiUrl = 'http://localhost:5000/api/investimento/calcular';
 
   constructor(private http: HttpClient) {}
 
